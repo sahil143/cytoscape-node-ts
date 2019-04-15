@@ -1,0 +1,38 @@
+.donut {
+  position: relative;
+  float: left;
+	left: 120px;
+}
+
+.donut-segment {
+  animation-name: fill-in;
+  animation-fill-mode: forwards;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in-out;
+/*   opacity: 0; */
+}
+
+circle.donut-ring {
+  -webkit-filter: drop-shadow(0 2px 10px 0 rgba(0,0,0,0.04));
+    filter: drop-shadow(0 2px 10px 0 rgba(0,0,0,0.04));
+}
+
+text.icon {
+  font-family: FontAwesome;
+  font-size:20px;
+  background-color:blue;
+}
+
+text.label {
+  font: bold 5px sans-serif;
+}
+
+@keyframes fill-in {
+  from {
+/*     opacity: 0; */
+    stroke-dashoffset: 0;
+  }
+  to {
+/*     opacity: 1; */
+  }
+}
