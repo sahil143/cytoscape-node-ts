@@ -1,3 +1,7 @@
+svg {
+  /* transform: rotate(-90deg); */
+}
+
 .donut {
   position: relative;
   float: left;
@@ -6,7 +10,7 @@
 
 .donut-segment {
   animation-name: fill-in;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
   animation-duration: 2000ms;
   animation-timing-function: ease-in-out;
 /*   opacity: 0; */
