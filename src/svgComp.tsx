@@ -2,7 +2,7 @@ import React from 'react';
 import './svgComp.css';
 // import { pods } from './data';
 
-type props ={ data: any }
+type props ={ data?: any, pods?: any }
 type state = {selected: boolean}
 
 class SvgComp extends React.Component<props, state> {
@@ -19,12 +19,12 @@ class SvgComp extends React.Component<props, state> {
   circleCenterX: number = this.viewBoxWidth/2;
   circleCentery: number = this.viewBoxWidth/2;
 
-  firstStrokeDashoffset: number = 25;
+  firstStrokeDashoffset: number = 0;
   pods: {id: number, color: string}[];
 
   constructor(props: any) {
     super(props);
-    this.pods = props.data.pods;
+    this.pods = props.pods ? props.pods : props.data.pods;
     this.state = {selected: false}
   }
 
@@ -40,7 +40,11 @@ class SvgComp extends React.Component<props, state> {
     let dataPer = this.circumference/this.pods.length
     let strokeDashoffset = this.firstStrokeDashoffset;
     strokeDashoffset = this.circumference - (dataPer * index) + this.firstStrokeDashoffset;
-    return <circle key={pod.id} className="donut-segment" data-per={dataPer} cx={this.circleCenterX} cy={this.circleCentery} r={this.radiusOfCircle - (1.5/2)} fill="transparent" stroke={pod.color} strokeWidth={this.strokeWidth} strokeDasharray={`${dataPer} ${this.circumference - dataPer}`} strokeDashoffset={index === 0 ? this.firstStrokeDashoffset : strokeDashoffset}></circle>;
+    return <circle key={pod.id} onClick={() => this.podClick(pod)} className="donut-segment" data-per={dataPer} cx={this.circleCenterX} cy={this.circleCentery} r={this.radiusOfCircle - (1.5/2)} fill="transparent" stroke={pod.color} strokeWidth={this.strokeWidth} strokeDasharray={`${dataPer} ${this.circumference - dataPer}`} strokeDashoffset={index === 0 ? this.firstStrokeDashoffset : strokeDashoffset}></circle>;
+  }
+
+  podClick = (pod: any) => {
+    console.log(pod.id)
   }
 
   cheClick = (e: React.MouseEvent) => {
