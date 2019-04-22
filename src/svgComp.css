@@ -9,6 +9,9 @@ svg {
 }
 
 .donut-segment {
+  /* transition: stroke-dashoffset 5s; */
+  /* transform: rotate(-90deg); */
+  /* transform-origin: center center; */
   animation-name: fill-in;
   animation-fill-mode: both;
   animation-duration: 2000ms;
@@ -19,6 +22,11 @@ svg {
 circle.donut-ring {
   -webkit-filter: drop-shadow(0 2px 10px 0 rgba(0,0,0,0.04));
     filter: drop-shadow(0 2px 10px 0 rgba(0,0,0,0.04));
+}
+
+.donut-start {
+  /* transform : rotate(-180deg); */
+  /* transform-origin: center center; */
 }
 
 text.icon {
@@ -34,7 +42,9 @@ text.label {
 @keyframes fill-in {
   from {
 /*     opacity: 0; */
-    stroke-dashoffset: 0;
+    /* stroke-dashoffset: 0;
+    transform: rotate(-90deg);
+    transform-origin: center center; */
   }
   to {
 /*     opacity: 1; */

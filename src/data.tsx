@@ -1,27 +1,51 @@
+export const podColor = {
+  Running: "#00b9e4",
+  Empty: "#ffffff",
+  "Not Ready": "#beedf9",
+  Warning: "#f39d3c",
+  Failed: "#d9534f",
+  Pulling: "#d1d1d1",
+  Pending: "#ededed",
+  Succceeded: "#3f9c35",
+  Terminating: "#00659c",
+  Unknown: "#f9d67a"
+};
+
 export const pods = [
   {
     id: 1,
-    status: "running",
+    status: {phase : "Running"},
+    value: 20,
     color: "yellow",
   },
   {
     id: 2,
+    status: {phase : "Pulling"},
+    value: 20,
     color: "red",
   },
   {
     id: 3,
+    value: 20,
+    status: {phase : "Pending"},
     color: 'green'
   },
   {
     id: 4,
+    value: 20,
+    status: {phase : "Running"},
     color: 'teal'
   },
   {
     id: 5,
+    value: 20,
+    status: {phase : "Running"},
     color: 'blue'
   },
   {
     id: 6,
+    value: 20,
+    status: {phase : "Failed"},
     color: 'orange'
   }
 ]
