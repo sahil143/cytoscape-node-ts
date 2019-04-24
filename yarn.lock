@@ -1160,6 +1160,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-motion@^0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@types/react-motion/-/react-motion-0.0.28.tgz#c790ec6ae041e41eaad6ff26cddf1982a6efd54f"
+  integrity sha512-2qiLr4zbfau/ARhEt835agsWUrKGLpqmuOJ49b1NuXE5eclGflCMcQFIM4EDVli6LT67Hs04qUvQ2lTa1QKokA==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@16.8.13":
   version "16.8.13"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.13.tgz#a82b15aad9ab91c40edca0d6889b7745ae24f053"
