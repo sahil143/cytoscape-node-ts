@@ -23,6 +23,7 @@ const Decorator: React.SFC<DecoratorTypes> = ({radius, onClick}) => {
           filter="url(#dropshadow)"
           onClick={onClick}
         />
+        {/* <text fontSize="7px" id="chk" x={radius * 2} y={radius * 2 + 6}>&#x2714;</text> */}
       </g>
     </g>
   );
