@@ -878,10 +878,10 @@
     "@svgr/plugin-svgo" "^4.0.3"
     loader-utils "^1.1.0"
 
-"@types/cytoscape@^3.4.1":
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/@types/cytoscape/-/cytoscape-3.4.1.tgz#4c3440b62386a966723220452b66732bd1ad5c83"
-  integrity sha512-Gr2rq2kHvttzS2Znh/AKKMrUWV5Vk5BZ42u+r1yb1KyRGQYMjqTDjFSWcLzl1vd47yjzWS3Liu5YlH2FL5Q5wA==
+"@types/cytoscape@^3.14.0":
+  version "3.14.0"
+  resolved "https://registry.yarnpkg.com/@types/cytoscape/-/cytoscape-3.14.0.tgz#346b5430a7a1533784bcf44fcbe6c5255b948d36"
+  integrity sha512-qOhhZFGb35457vmCu9YHqwjqleraSAEikaIFmMUPWzTC7FrwkS7VR/6ymqRHW7Z8wivHuzsZDYCoePIepd69qg==
 
 "@types/d3-array@*":
   version "2.0.0"
