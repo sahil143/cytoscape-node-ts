@@ -12,7 +12,7 @@
     "@types/react-dom": "16.8.4",
     "@types/react-motion": "^0.0.28",
     "cytoscape": "^3.5.3",
-    "d3": "^5.9.2",
+    "d3": "^5.15.1",
     "lodash-es": "^4.17.11",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
